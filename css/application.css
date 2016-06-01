@@ -1,0 +1,90 @@
+body {
+	padding: 30px 0;
+}
+
+.box-product {
+	position: relative;
+	text-align: center;
+	margin-bottom: 60px;
+	overflow: hidden;
+}
+
+.box-product.sold .image::before {
+	content: 'Sold';
+	display: block;
+	width: 150%;
+	height: 65px;
+	line-height: 65px;
+	font-weight: bold;
+	font-size: 22px;
+	border-top: 2px solid green;
+	border-bottom: 2px solid green;
+	background-color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+
+	transform: translate(-50%, -50%) rotate(-30deg);
+	z-index: 100;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.box-product.reserved .image::before {
+	content: 'reserved';
+	display: block;
+	width: 150%;
+	height: 65px;
+	line-height: 65px;
+	font-weight: bold;
+	font-size: 18px;
+	border-top: 2px solid #ec971f;
+	border-bottom: 2px solid #ec971f;
+	background-color: rgba(255, 255, 255, 0.7);
+	text-transform: uppercase;
+	letter-spacing: 4px;
+
+	transform: translate(-50%, -50%) rotate(-30deg);
+	z-index: 100;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.box-product h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.box-product .image {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
+}
+
+.box-product .image img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.box-product .price {
+	height: 80px;
+}
+
+.box-product .price .from {
+	text-decoration: line-through;
+}
+
+.box-product .price .saleprice {
+	font-size: 1.2em;
+	font-weight: bold;
+}
