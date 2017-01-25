@@ -94,5 +94,5 @@ if(!window.App) window.App = {};
 
 
 	// Calls the JSON
-	$.get('https://docs.google.com/spreadsheets/d/' + App.Config.spreadSheetID + '/1/public/values?alt=json-in-script&callback=loadData')
+	$.get('https://spreadsheets.google.com/feeds/list/' + App.Config.spreadSheetID + '/1/public/values?alt=json-in-script&callback=loadData')
 })(jQuery)
